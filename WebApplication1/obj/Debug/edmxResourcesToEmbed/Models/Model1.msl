@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PRUEBAModelStoreContainer" CdmEntityContainer="PRUEBAEntities">
+    <EntitySetMapping Name="Contacto">
+      <EntityTypeMapping TypeName="PRUEBAModel.Contacto">
+        <MappingFragment StoreEntitySet="Contacto">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="dni" ColumnName="dni" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactoTelefono">
+      <EntityTypeMapping TypeName="PRUEBAModel.ContactoTelefono">
+        <MappingFragment StoreEntitySet="ContactoTelefono">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="contactoID" ColumnName="contactoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
